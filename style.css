@@ -1,0 +1,14 @@
+input, 
+label,
+button {
+  display: block;
+}
+
+input + *,
+* + button {
+  margin-top: 1rem;
+}
+
+input[type="date"] {
+  border: 2px solid blue;
+}

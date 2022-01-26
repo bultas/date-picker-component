@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="index.js"></script>
+</head>
+
+<body>
+
+  <form>
+    <label>Name</label>
+    <input name="name" />
+
+    <label id="date" for="date-picker">Date Picker</label>
+    <input type="date" id="date" name="date" value="2022-02-15" max="2022-03-01" min="2022-01-01">
+
+    <label id="date-picker" for="date-picker">Start</label>
+    <date-picker invalid-class="test">
+      <input type="date" id="start" name="start" value="2022-02-15" max="2022-03-01" min="2022-01-01">
+    </date-picker>
+
+    <!-- <label for="">End</label>
+    <date-picker invalid-class="test">
+      <input type="date" id="end" name="end" value="2022-02-15" max="2022-03-01" min="2022-01-01">
+    </date-picker> -->
+
+
+    <button type="submit">Submit</button>
+  </form>
+
+</body>
+
+</html>
